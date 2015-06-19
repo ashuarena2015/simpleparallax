@@ -1,7 +1,14 @@
 @charset "utf-8";
 /* CSS Document */
 
-body{padding:0; margin:0; background:#414141;}
-h1{font-size:24px; color:#FFF; text-align:center;}
+body{padding:0; margin:0; background:#414141; min-height:2000px;font-family: 'Droid Sans', sans-serif;}
+
+
+
+.scrolledAmount{position:fixed; top:10px; right:10px; padding:10px; color:#fff; background:#9C6; z-index:1;}
+section#homesection{width:100%; padding:25px 0; height:650px; background:url(images/Desert.jpg) no-repeat 0 0; background-size:cover;}
+section#homesection h1{font-size:42px; color:#FFF; text-align:center; margin-top:150px;}
+section#aboutsection{width:100%; padding:25px 0; height:450px; background:url(images/20130830-adc.png) repeat;}
+section#aboutsection h1{font-size:42px; color:#C30; text-align:center; margin-top:150px;}
 
 
