@@ -6,16 +6,20 @@ $(document).ready(function(){
     $('.toUpward').each(function(){
         var $bgobj = $(this); // assigning the object
 
-        $(window).scroll(function() {
-            var yPos = -($(window).scrollTop() / $bgobj.data('speed')); 
-            
-			$('.scrolledAmount').html($(window).scrollTop());
-			
-            // Put together our final background position
-            var coords = '0% '+ yPos + 'px';
-
-            // Move the background
-            $bgobj.css({ backgroundPosition: coords });
+        $(window).scroll(function() {						  
+		  var getWindowWidth = $(window).width();
+			if(getWindowWidth > 1300){
+									  
+				var yPos = -($(window).scrollTop() / $bgobj.data('speed')); 
+				
+				$('.scrolledAmount').html($(window).scrollTop());
+				
+				// Put together our final background position
+				var coords = '0% '+ yPos + 'px';
+	
+				// Move the background
+				$bgobj.css({ backgroundPosition: coords });
+			}
         }); 
     });
 	
@@ -23,7 +27,9 @@ $(document).ready(function(){
 	 $('.toLeft').each(function(){
         var $bgobj = $(this); // assigning the object
 
-        $(window).scroll(function() {
+        $(window).scroll(function() {	
+		var getWindowWidth = $(window).width();
+		if(getWindowWidth > 1300){						  								  
             var xPos = ($(window).scrollTop() / $bgobj.data('speed')); 
             
 			$('.scrolledAmount').html($(window).scrollTop());
@@ -33,6 +39,7 @@ $(document).ready(function(){
 
             // Move the background
             $bgobj.css({ backgroundPosition: coords });
+		}
         }); 
     });
 	
