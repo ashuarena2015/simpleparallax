@@ -9,6 +9,7 @@ body{padding:0; margin:0; background:#414141; min-height:2000px;font-family: 'Dr
 section#homesection{width:100%; padding:25px 0; height:650px; background:url(images/Desert.jpg) no-repeat 0 0; background-size:cover;}
 section#homesection h1{font-size:42px; color:#FFF; text-align:center; margin-top:150px;}
 section#aboutsection{width:100%; padding:25px 0; height:450px; background:url(images/20130830-adc.png) repeat;}
+section#servicessection{width:100%; padding:25px 0; height:450px; background:url(images/Lighthouse.jpg)  no-repeat 0 0; background-size:cover;}
 section#aboutsection h1{font-size:42px; color:#C30; text-align:center; margin-top:150px;}
 
 
